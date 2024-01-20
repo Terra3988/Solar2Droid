@@ -1,0 +1,48 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 33
+    namespace "io.solar2d"
+	
+    defaultConfig {
+        applicationId "io.solar2d"
+        minSdk 24
+        targetSdk 33
+        versionCode 121
+        versionName "1.2.1"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+	implementation files('libs/dx.jar')
+	// implementation files('libs/ecj.jar')
+	implementation files('libs/kw.jar')
+	implementation files('libs/kwa.jar')
+	implementation files('libs/prov.jar')
+	implementation files('libs/sdklib.jar')
+	implementation files('libs/zipio.jar')
+	implementation files('libs/zipsigner.jar')
+	implementation files('libs/zipsigner_optional.jar')
+	implementation files('libs/luaj.jar')
+	
+	implementation 'net.lingala.zip4j:zip4j:2.11.5'
+	implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+	implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+	
+    implementation 'androidx.appcompat:appcompat:1.7.0-alpha01'
+    implementation 'com.google.android.material:material:1.8.0-rc01'
+	implementation 'androidx.constraintlayout:constraintlayout:2.2.0-alpha05'
+}

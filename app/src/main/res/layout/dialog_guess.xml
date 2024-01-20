@@ -1,0 +1,63 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/app_background"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Заголовок"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/text_color"
+        android:id="@+id/guess_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Описание"
+        android:layout_below="@id/guess_title"
+        android:id="@+id/guess_description"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"/>
+		
+	<RelativeLayout
+		android:id="@+id/guess_cancel"
+		android:layout_width="100dp"
+		android:layout_height="60dp"
+		android:layout_marginTop="10dp"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@id/guess_description"
+		android:background="@drawable/rect" >
+		<TextView
+			android:layout_width="100dp"
+			android:layout_height="60dp"
+			android:gravity="center"
+			android:layout_centerInParent="true"
+			android:textColor="@color/text_color"
+			android:textSize="20sp"
+			android:text="Отмена" />
+	</RelativeLayout>
+	
+	<RelativeLayout
+		android:id="@+id/guess_ok"
+		android:layout_width="100dp"
+		android:layout_height="60dp"
+		android:layout_marginTop="10dp"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/guess_description"
+		android:background="@drawable/rect" >
+		<TextView
+			android:layout_width="100dp"
+			android:layout_height="60dp"
+			android:gravity="center"
+			android:layout_centerInParent="true"
+			android:textColor="@color/text_color"
+			android:textSize="20sp"
+			android:text="Ок" />
+	</RelativeLayout>
+
+</RelativeLayout>

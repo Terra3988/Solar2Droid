@@ -1,0 +1,130 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/app_background"
+	android:padding="8dp">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Сборка приложения"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/dialog_build_title"
+		android:textSize="20sp"
+		android:textColor="@color/text_color"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Название приложения"
+		android:layout_below="@id/dialog_build_title"
+		android:layout_marginTop="10dp"
+		android:textColor="@color/text_color"
+		android:textSize="15sp"
+		android:id="@+id/dialog_build_name_title"/>
+
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:digits="qwertyuiopasdfghjklzxcvbnm1234567890._йцукенгшщзхфывапролджэячсмитьбю QWERTYUIOPASDFGHJKLZXCVBNMЙФЦЫЯУВЧКАСЕПМНРИГОТШЛЬЩДБЗЖЮХЭ"
+		android:layout_below="@id/dialog_build_name_title"
+		android:id="@+id/dialog_build_name_field"
+		android:text="Test app"
+		android:textColor="@color/text_color"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Пакет приложения"
+		android:textSize="15sp"
+		android:textColor="@color/text_color"
+		android:layout_marginTop="10dp"
+		android:layout_below="@id/dialog_build_name_field"
+		android:id="@+id/dialog_build_pkg_title"/>
+		
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:digits="qwertyuiopasdfghjklzxcvbnm1234567890._"
+		android:layout_below="@id/dialog_build_pkg_title"
+		android:id="@+id/dialog_build_pkg_field"
+		android:text="io.test.app"
+		android:textColor="@color/text_color"/>
+		
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Номер версии"
+		android:textSize="15sp"
+		android:textColor="@color/text_color"
+		android:layout_marginTop="10dp"
+		android:layout_below="@id/dialog_build_pkg_field"
+		android:id="@+id/dialog_build_vcode_title"/>
+	
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:digits="1234567890"
+		android:layout_below="@id/dialog_build_vcode_title"
+		android:id="@+id/dialog_build_vcode_field"
+		android:text="1"
+		android:textColor="@color/text_color"/>
+		
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Название версии"
+		android:textSize="15sp"
+		android:textColor="@color/text_color"
+		android:layout_marginTop="10dp"
+		android:layout_below="@id/dialog_build_vcode_field"
+		android:id="@+id/dialog_build_vname_title"/>
+	
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:digits="qwertyuiopasdfghjklzxcvbnm1234567890."
+		android:layout_below="@id/dialog_build_vname_title"
+		android:id="@+id/dialog_build_vname_field"
+		android:text="1.0"
+		android:textColor="@color/text_color"/>
+		
+	<ImageView
+		android:src="@drawable/folder"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_below="@id/dialog_build_vname_field"
+		android:layout_alignParentRight="true"
+		android:id="@+id/dialog_build_pick" />
+	<TextView
+		android:id="@+id/dialog_build_project_path"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:gravity="center_vertical"
+		android:textColor="@color/text_color"
+		android:textSize="15sp"
+		android:text="/путь/к/проекту"
+		android:layout_below="@id/dialog_build_vname_field"
+		android:layout_toLeftOf="@id/dialog_build_pick" />
+	
+	<RelativeLayout
+		android:id="@+id/dialog_build_build"
+		android:layout_width="100dp"
+		android:layout_height="50dp"
+		android:layout_marginTop="10dp"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/dialog_build_pick"
+		android:background="@drawable/rect" >
+		<TextView
+			android:layout_width="100dp"
+			android:layout_height="50dp"
+			android:gravity="center"
+			android:layout_centerInParent="true"
+			android:textColor="@color/text_color"
+			android:textSize="20sp"
+			android:text="Собрать" />
+	</RelativeLayout>
+	
+</RelativeLayout>

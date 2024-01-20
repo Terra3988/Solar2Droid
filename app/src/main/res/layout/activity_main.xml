@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/app_background">
+
+	<ImageView
+		android:layout_width="251dp"
+		android:layout_height="105dp"
+		android:src="@drawable/solar_splash"
+		android:id="@+id/menu_splash"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="50dp"/>
+	
+	<RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/menu_create"
+        android:layout_below="@id/menu_splash"
+		android:background="@drawable/rect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="Создать проект"
+			android:textSize="20sp"
+			android:textColor="@color/text_color"
+			android:typeface="monospace" />
+		
+	</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:padding="8dp"
+        android:id="@+id/menu_build"
+        android:layout_below="@id/menu_create"
+		android:background="@drawable/rect"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="Собрать проект"
+			android:textSize="18sp"
+			android:textColor="@color/text_color"
+			android:typeface="monospace" />
+		
+	</RelativeLayout>
+	
+	<RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:padding="8dp"
+        android:id="@+id/menu_docs"
+        android:layout_below="@id/menu_build"
+		android:background="@drawable/rect"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="Документация"
+			android:textSize="18sp"
+			android:textColor="@color/text_color"
+			android:typeface="monospace" />
+		
+	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/menu_app_version"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="1.1 (2)"
+		android:textColor="@color/text_color"
+		android:textSize="20sp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginBottom="5dp"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true" />
+	
+	<ImageView
+		android:id="@+id/download_plugindb"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:src="@drawable/ic_plugins"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="app_background">#FF333333</color>
+	<color name="panel_background">#FF2C2C2C</color>
+	<color name="button_background">#FF292929</color>
+	
+	<color name="text_color">#FFBBBBBB</color>
+</resources>
